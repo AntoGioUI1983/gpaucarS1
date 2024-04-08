@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="gpaucarS1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label
+               Text="Calculo de aporte mensual del IESS"               
+                TextColor="Green"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center">
+
+            </Label>
+
+            <Entry x:Name="txtNombre"
+                   Placeholder="Digite sus nombres"/>
+
+            <Entry x:Name="txtApellido"
+                Placeholder="Digite sus apellidos"/>
+
+            <Entry x:Name="txtEdad"
+                    Placeholder="Digite su edad"/>
+
+            <Entry x:Name="txtSalario"
+                  Placeholder="Digite su salario $"
+                  Keyboard="Numeric"/>
+                    
+
+
+            <Button x:Name="btnSaludo"
+                    Text="Calcular"
+                    Clicked="btnSaludo_Clicked" ></Button>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
